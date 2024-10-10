@@ -34,6 +34,7 @@ class BaseViewController: UITabBarController {
         let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         self.navigationItem.backBarButtonItem = backBarButtonItem
     }
+    
     private func setUpTabbarAppearance() {
        
         let appearance = UITabBarAppearance()

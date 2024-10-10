@@ -11,20 +11,21 @@ class ShopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        
+        let label = UILabel().then {
+            $0.text = "Shop VC"
+            $0.font = UIFont.systemFont(ofSize: 36, weight: .bold)
+            $0.textAlignment = .center
+            $0.textColor = .black
+        }
+        
+        view.addSubview(label)
+        
+        label.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

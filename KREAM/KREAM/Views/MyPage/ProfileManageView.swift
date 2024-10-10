@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileManageView: UIView {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .white
@@ -20,7 +20,7 @@ class ProfileManageView: UIView {
     }
     
     public lazy var profileImageView = UIImageView().then {
-        $0.image = UIImage(named: "KREAM-profileImage")
+        $0.image = UIImage(named: "KREAM-profileImage") // 기본 이미지 설정
         $0.contentMode = .scaleAspectFill
     }
     
@@ -50,33 +50,25 @@ class ProfileManageView: UIView {
     public lazy var userEmailTextField = UITextField().then {
         $0.textAlignment = .left
         $0.font = UIFont.systemFont(ofSize: 14)
-        $0.placeholder = "새로운 이메일을 입력해 주세요!"
-        $0.setPlaceholderColor(.placeholderGray)
-        
+        $0.placeholder = "이메일을 입력해주세요"
         $0.layer.cornerRadius = 10
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.buttonGray.cgColor
-        
-        $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 11.0, height: 0.0))
+        $0.layer.borderColor = UIColor.gray.cgColor
+        $0.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         $0.leftViewMode = .always
-        
-        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.isUserInteractionEnabled = false  // 초기 비활성화
     }
     
-     public lazy var userPwdTextField = UITextField().then {
+    public lazy var userPwdTextField = UITextField().then {
         $0.textAlignment = .left
         $0.font = UIFont.systemFont(ofSize: 14)
-        $0.placeholder = "새로운 비밀번호를 입력해 주세요!"
-        $0.setPlaceholderColor(.placeholderGray)
-        
+        $0.placeholder = "비밀번호를 입력해주세요"
         $0.layer.cornerRadius = 10
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.buttonGray.cgColor
-         
-         $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 11.0, height: 0.0))
-         $0.leftViewMode = .always
-        
-        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.layer.borderColor = UIColor.gray.cgColor
+        $0.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        $0.leftViewMode = .always
+        $0.isUserInteractionEnabled = false  // 초기 비활성화
     }
     
     private lazy var titleContainer : AttributeContainer = {
@@ -88,33 +80,19 @@ class ProfileManageView: UIView {
     }()
     
     public lazy var userEmailChangeButton = UIButton().then {
-        var config = UIButton.Configuration.plain()
-        
-        config.attributedTitle = AttributedString("변경", attributes: titleContainer)
-        config.titleAlignment = .center
-        
-        config.background.strokeWidth = 1
-        config.background.strokeColor = .black
-        
-        config.cornerStyle = .large
-        
-        $0.configuration = config
-        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.setTitle("변경", for: .normal)
+        $0.setTitleColor(.black, for: .normal)
+        $0.layer.cornerRadius = 5
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.black.cgColor
     }
     
-   public lazy var userPwdChangeButton = UIButton().then {
-        var config = UIButton.Configuration.plain()
-        
-        config.attributedTitle = AttributedString("변경", attributes: titleContainer)
-        config.titleAlignment = .center
-        
-        config.background.strokeWidth = 1
-        config.background.strokeColor = .black
-        
-        config.cornerStyle = .large
-        
-        $0.configuration = config
-        $0.translatesAutoresizingMaskIntoConstraints = false
+    public lazy var userPwdChangeButton = UIButton().then {
+        $0.setTitle("변경", for: .normal)
+        $0.setTitleColor(.black, for: .normal)
+        $0.layer.cornerRadius = 5
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.black.cgColor
     }
     
     private func addComponents() {
@@ -134,6 +112,7 @@ class ProfileManageView: UIView {
         profileImageView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(self.safeAreaLayoutGuide).inset(52)
+            make.width.height.equalTo(90)
         }
         
         infoView.snp.makeConstraints { make in

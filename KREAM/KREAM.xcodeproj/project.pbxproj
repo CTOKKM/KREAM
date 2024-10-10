@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B169DE42CB83778000467A6 /* SavedVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B169DE32CB83778000467A6 /* SavedVC+Extension.swift */; };
 		7B2E045B2CAF14F100A79C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E04512CAF14F100A79C79 /* AppDelegate.swift */; };
 		7B2E045C2CAF14F100A79C79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E04582CAF14F100A79C79 /* SceneDelegate.swift */; };
 		7B2E045E2CAF14F100A79C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E04522CAF14F100A79C79 /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		7B2E04732CAF15FE00A79C79 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E04722CAF15FE00A79C79 /* LoginView.swift */; };
 		7B2E04762CAF161200A79C79 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7B2E04752CAF161200A79C79 /* Then */; };
 		7B2E04792CAF161C00A79C79 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7B2E04782CAF161C00A79C79 /* SnapKit */; };
-		7B2E047C2CAF16B000A79C79 /* placeHoler+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E047B2CAF16B000A79C79 /* placeHoler+.swift */; };
+		7B2E047C2CAF16B000A79C79 /* placeHolder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E047B2CAF16B000A79C79 /* placeHolder+.swift */; };
 		7B2E047E2CAF16D600A79C79 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E047D2CAF16D600A79C79 /* BaseViewController.swift */; };
 		7B2E04802CAF16E600A79C79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E047F2CAF16E600A79C79 /* HomeViewController.swift */; };
 		7B2E04822CAF170700A79C79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E04812CAF170700A79C79 /* LoginViewController.swift */; };
@@ -25,9 +26,13 @@
 		7B2E048E2CAF17CA00A79C79 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E048D2CAF17CA00A79C79 /* MyPageView.swift */; };
 		7B2E04902CAF17E100A79C79 /* ProfileManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E048F2CAF17E100A79C79 /* ProfileManageView.swift */; };
 		7B2E04922CAF180D00A79C79 /* ProfileManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E04912CAF180D00A79C79 /* ProfileManageViewController.swift */; };
+		7BDFA7202CB7BD670005A31D /* SavedItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDFA71F2CB7BD670005A31D /* SavedItemModel.swift */; };
+		7BDFA7222CB7BFB80005A31D /* SavedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDFA7212CB7BFB80005A31D /* SavedItemCell.swift */; };
+		7BDFA7242CB7BFE60005A31D /* SavedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDFA7232CB7BFE60005A31D /* SavedItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B169DE32CB83778000467A6 /* SavedVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedVC+Extension.swift"; sourceTree = "<group>"; };
 		7B2E04392CAF14ED00A79C79 /* KREAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KREAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2E04512CAF14F100A79C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B2E04522CAF14F100A79C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,7 +40,7 @@
 		7B2E04582CAF14F100A79C79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B2E04652CAF158400A79C79 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		7B2E04722CAF15FE00A79C79 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		7B2E047B2CAF16B000A79C79 /* placeHoler+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "placeHoler+.swift"; sourceTree = "<group>"; };
+		7B2E047B2CAF16B000A79C79 /* placeHolder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "placeHolder+.swift"; sourceTree = "<group>"; };
 		7B2E047D2CAF16D600A79C79 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7B2E047F2CAF16E600A79C79 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7B2E04812CAF170700A79C79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +51,9 @@
 		7B2E048D2CAF17CA00A79C79 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		7B2E048F2CAF17E100A79C79 /* ProfileManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageView.swift; sourceTree = "<group>"; };
 		7B2E04912CAF180D00A79C79 /* ProfileManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageViewController.swift; sourceTree = "<group>"; };
+		7BDFA71F2CB7BD670005A31D /* SavedItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemModel.swift; sourceTree = "<group>"; };
+		7BDFA7212CB7BFB80005A31D /* SavedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemCell.swift; sourceTree = "<group>"; };
+		7BDFA7232CB7BFE60005A31D /* SavedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		7B2E045A2CAF14F100A79C79 /* KREAM */ = {
 			isa = PBXGroup;
 			children = (
+				7BDFA71E2CB7BD300005A31D /* Cells */,
 				7B2E047A2CAF169F00A79C79 /* Extension */,
 				7B2E04622CAF156700A79C79 /* Models */,
 				7B2E04632CAF156E00A79C79 /* ViewControllers */,
@@ -96,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				7B2E04652CAF158400A79C79 /* LoginModel.swift */,
+				7BDFA71F2CB7BD670005A31D /* SavedItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +197,7 @@
 		7B2E046E2CAF15DA00A79C79 /* Saved */ = {
 			isa = PBXGroup;
 			children = (
+				7BDFA7232CB7BFE60005A31D /* SavedItemView.swift */,
 			);
 			path = Saved;
 			sourceTree = "<group>";
@@ -216,9 +227,18 @@
 		7B2E047A2CAF169F00A79C79 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7B2E047B2CAF16B000A79C79 /* placeHoler+.swift */,
+				7B2E047B2CAF16B000A79C79 /* placeHolder+.swift */,
+				7B169DE32CB83778000467A6 /* SavedVC+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7BDFA71E2CB7BD300005A31D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7BDFA7212CB7BFB80005A31D /* SavedItemCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,15 +319,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDFA7222CB7BFB80005A31D /* SavedItemCell.swift in Sources */,
 				7B2E04822CAF170700A79C79 /* LoginViewController.swift in Sources */,
 				7B2E04922CAF180D00A79C79 /* ProfileManageViewController.swift in Sources */,
-				7B2E047C2CAF16B000A79C79 /* placeHoler+.swift in Sources */,
+				7BDFA7242CB7BFE60005A31D /* SavedItemView.swift in Sources */,
+				7BDFA7202CB7BD670005A31D /* SavedItemModel.swift in Sources */,
+				7B2E047C2CAF16B000A79C79 /* placeHolder+.swift in Sources */,
 				7B2E048E2CAF17CA00A79C79 /* MyPageView.swift in Sources */,
 				7B2E04862CAF172200A79C79 /* ShopViewController.swift in Sources */,
 				7B2E04842CAF171D00A79C79 /* StyleViewController.swift in Sources */,
 				7B2E04902CAF17E100A79C79 /* ProfileManageView.swift in Sources */,
 				7B2E045B2CAF14F100A79C79 /* AppDelegate.swift in Sources */,
 				7B2E045C2CAF14F100A79C79 /* SceneDelegate.swift in Sources */,
+				7B169DE42CB83778000467A6 /* SavedVC+Extension.swift in Sources */,
 				7B2E04882CAF172700A79C79 /* SavedViewController.swift in Sources */,
 				7B2E048C2CAF174700A79C79 /* MyPageViewController.swift in Sources */,
 				7B2E04802CAF16E600A79C79 /* HomeViewController.swift in Sources */,
