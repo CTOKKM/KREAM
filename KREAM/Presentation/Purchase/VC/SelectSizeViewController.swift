@@ -53,7 +53,7 @@ class SelectSizeViewController: UIViewController {
     
     // MARK: - Function
     
-    /// 커스텀 네비게이션 타이틀 뷰 및 우측 닫기 버튼 생서
+    /// 커스텀 네비게이션 타이틀 뷰 및 우측 닫기 버튼 생성
     private func setNavigation() {
         self.navigationItem.titleView = CustomNavigationTitle(frame: .zero, titleText: "구매하기", subTitleText: "(가격 단위:원)")
         

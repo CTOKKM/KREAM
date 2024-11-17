@@ -138,6 +138,7 @@ extension HomeViewController {
             
             // 네비게이션 컨트롤러 확인 및 화면 전환 처리
             if let navigationController = self.navigationController {
+                purchaseVC.hidesBottomBarWhenPushed = true
                 navigationController.pushViewController(purchaseVC, animated: true)
             } else {
                 // 네비게이션 컨트롤러가 없는 경우 수동으로 생성 및 푸시

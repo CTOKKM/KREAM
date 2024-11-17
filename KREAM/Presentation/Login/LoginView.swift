@@ -10,7 +10,7 @@ import SnapKit
 
 /// 로그인 뷰에 사용되는 UIView
 class LoginView: UIView {
-
+    
     // MARK: - Init
     
     override init(frame: CGRect) {
@@ -138,10 +138,12 @@ class LoginView: UIView {
         let btn = UIButton()
         var configuration = UIButton.Configuration.plain()
         
+        // 로고 이미지와 타이틀 설정
         configuration.image = UIImage(named: image)
         configuration.imagePlacement = .leading
         configuration.imagePadding = 69
         
+        // 타이틀 설정
         configuration.attributedTitle = AttributedString(title, attributes: attributeContainer)
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 11, leading: 17, bottom: 13, trailing: 102)
         btn.configuration = configuration
@@ -212,6 +214,21 @@ class LoginView: UIView {
             $0.right.equalToSuperview().offset(-47.5)
             $0.bottom.equalToSuperview().offset(-189)
         }
+        
+        kakaoBtn.snp.makeConstraints {
+            $0.height.equalTo(40)
+        }
+        
+        appleBtn.snp.makeConstraints {
+            $0.height.equalTo(40)
+        }
+        
+        // 텍스트 줄바꿈 방지
+        kakaoBtn.titleLabel?.lineBreakMode = .byTruncatingTail
+        kakaoBtn.titleLabel?.numberOfLines = 1
+        
+        appleBtn.titleLabel?.lineBreakMode = .byTruncatingTail
+        appleBtn.titleLabel?.numberOfLines = 1
     }
 }
 

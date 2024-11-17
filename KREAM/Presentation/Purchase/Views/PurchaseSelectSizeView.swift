@@ -106,8 +106,8 @@ class PurchaseSelectSizeView: UIView {
         
         collectionView.snp.makeConstraints {
             $0.top.equalTo(productImageView.snp.bottom).offset(35)
-            $0.left.equalToSuperview().offset(15)
-            $0.right.equalToSuperview().offset(-15)
+            $0.left.equalToSuperview().offset(12)
+            $0.right.equalToSuperview().offset(-12)
             $0.height.greaterThanOrEqualTo(115)
         }
         
